@@ -13,6 +13,7 @@ body {
   margin-left: 30px;
   margin-right: 30px;
   background-color: #e0e0e0;
+  background-image: url("https://images.unsplash.com/photo-1591809380758-d311d61a3476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
 }
 
 nav {
@@ -54,6 +55,15 @@ nav ul li a {
 
 #header {
   text-align: center;
+}
+
+#subheader {
+  text-align: center;
+}
+
+#instructions {
+  text-align: center;
+  padding: 25px 27px;
 }
 
 .container {

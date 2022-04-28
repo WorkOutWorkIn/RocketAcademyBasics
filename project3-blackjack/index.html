@@ -60,7 +60,11 @@ The <html> element is known as the root element of a HTML page. All other elemen
       </ul>
     </nav>
     <!-- The <h1> element defines a large heading. There are 6 pre-set header elements, <h1> to <h6> -->
-    <h1 id="header">🚀 Basics Project 3: Blackjack 🚀</h1>
+    <h1 id="header">
+      Welcome to MINGS Blackjack!
+    </h1>
+    <h2 id="subheader"> Click the submit button to get
+      started! <h2>
     <!-- The <div> tag defines a division or a section in an HTML document, and is commonly use as a "container" for nested HTML elements. -->
     <div class="container">
       <!-- The <p> tag defines a paragraph element. -->
@@ -71,6 +75,8 @@ The <html> element is known as the root element of a HTML page. All other elemen
       <br />
       <!-- The <button> tag represents.. you guessed it! a button. -->
       <button id="submit-button">Submit</button>
+      <button id="hit-button">Hit</button>
+      <button id="stand-button">Stand</button>
       <p>Output:</p>
       <div class="output-div" id="output-div"></div>
     </div>
@@ -82,8 +88,6 @@ The <html> element is known as the root element of a HTML page. All other elemen
     <script>
       // Declare and define a variable that represents the Submit Button
       var button = document.querySelector("#submit-button");
-      // When the submit button is clicked, access the text entered by the user in the input field
-      // And pass it as an input parameter to the main function as defined in script.js
       button.addEventListener("click", function () {
         // Set result to input value
         var input = document.querySelector("#input-field");
@@ -97,6 +101,17 @@ The <html> element is known as the root element of a HTML page. All other elemen
         // Reset input value
         input.value = "";
       });
+      var hitButton = document.querySelector("#hit-button")
+      hitButton.addEventListener("click", function (){
+      var output = document.querySelector("#output-div")
+      output.innerHTML = hit();
+      })
+      var standButton = document.querySelector("#stand-button")
+      standButton.addEventListener("click", function(){
+      var output = document.querySelector("#output-div")
+      output.innerHTML = stand();
+      })
+
     </script>
   </body>
 </html>
